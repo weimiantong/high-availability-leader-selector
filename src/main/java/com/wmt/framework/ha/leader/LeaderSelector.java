@@ -13,7 +13,7 @@ import org.apache.curator.utils.CloseableUtils;
 @Slf4j
 public class LeaderSelector {
     @Setter
-    private LeaderLatchListener listener;
+    private LeaderSelectorListener listener;
 
     private final ZkConfig zkConfig;
     private CuratorFramework client;
